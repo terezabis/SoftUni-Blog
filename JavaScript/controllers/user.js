@@ -1,10 +1,10 @@
 const encryption = require("../utilities/encryption");
 const User = require('../models').User;
 
-/* User.prototype.authenticate = function(password){
+ User.prototype.authenticate = function(password){
     let inputPasswordHash = encryption.hashPassword(password, this.salt);
     return inputPasswordHash === this.passwordHash;
-} */
+} 
 
 module.exports = {
     registerGet: (req, res) => {

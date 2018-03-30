@@ -1,3 +1,6 @@
+/**
+ * Created by SoftUniLector on 11/6/2016.
+ */
 const crypto = require('crypto');
 module.exports = {
   generateSalt: () => {
@@ -9,3 +12,6 @@ module.exports = {
       return passwordHash;
   }
 };
+
+
+

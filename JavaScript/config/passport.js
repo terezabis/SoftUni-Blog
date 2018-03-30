@@ -17,6 +17,8 @@ const authenticateUser = (username, password, done) => {
 
 };
 
+
+
 module.exports = () => {
     passport.use(new LocalPassport({
         usernameField: 'email',

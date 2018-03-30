@@ -1,4 +1,5 @@
 const Article = require('../models').Article;
+const User = require('../models').User;
 
 module.exports = {
     createGet: (req, res) => {
@@ -41,7 +42,7 @@ module.exports = {
                 }
             ]
         }).then(article => {
-            res.render('article/details', article.dataVaules)
+            res.render('article/details', article.dataValues)
         });
     }
 };
